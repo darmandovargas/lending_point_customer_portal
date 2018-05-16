@@ -1,0 +1,109 @@
+      .cp-contact-us {
+      margin-bottom: 5% !important;
+      }
+
+      .cp-faq {
+      margin-top: 0;
+      padding: 5px 15px;
+      background: #666666;
+      font-size: 20px;
+      line-height: 26px;
+      color:white;
+      }
+
+      .cp-contact .uk-panel-box {
+      border: none;
+      }
+/* -------ACTIONS------- */
+
+      .cp-contact-us .uk-icon-button {
+        width: 220px;
+        height: 220px;
+        background-image: linear-gradient(-45deg, #EBEDEE 0%, #FBFBFB 100%);
+        padding-top: 12%;
+        font-family: 'Fira Sans', Helvetica, sans-serif;
+      }
+
+      .cp-contact-us .uk-icon-button:hover {
+        border: 5px solid var(--lpteal);
+      }
+
+      .cp-contact-us .uk-icon-button p {
+        display:block;
+        float:left;
+        width:100%;
+        margin-top:1px;
+        text-align:center;
+        font-size:20px;
+        font-weight: 800;
+        color: var(--lpteal);
+      }
+
+      .cp-contact-us .uk-icon-button p:hover {
+        color: var(--lpblue);
+      }
+
+
+      .cp-contact-us .uk-icon-button span {
+        font-size: 50px
+      }
+
+      .cp-callback {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        padding: 3%;
+        background: #EDEEF0;
+        width: 60%;
+      }
+
+      .cp-callback .uk-button {
+        vertical-align: bottom;
+      }
+
+      .cp-callback .uk-close {
+        border: 2px solid var(--lpblue);
+        color: var(--lpblue);
+        opacity: 1;
+      }
+
+      .cp-callback .close {
+        text-align: right;
+      }
+
+      .cp-contact-us .uk-icon-button img {
+        width: 64px;
+        height: 64px;
+      }
+
+      .cp-contact-us .uk-icon-button h5 {
+        color: var(--lpblue);
+        font-weight: 600;
+        margin-top:15px;
+        margin-bottom: 5px;
+      }
+
+      .cp-contact-us .uk-icon-button hr {
+        width: 140px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-top: 2px solid var(--lpteal);
+      }
+
+      .text-faq h2 {
+        color: var(--lpblue);
+        font-weight: 600;
+      }
+
+      .text-faq p {
+        color: #4E5A6A;
+        font-size: 22px;
+      }
+
+      .uk-accordion-content {
+        background-image: linear-gradient(0deg, #FFFFFF 43%, #EDEEF0 100%);
+      }

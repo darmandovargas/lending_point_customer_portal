@@ -1,0 +1,286 @@
+/* FEATURES LOAN */
+
+.cp-nextpayment-ach, .cp-nextpayment-noach, .cp-lastpayment {
+  background: var(--gradientgray);
+  border-radius: 50%;
+}
+.info-circle {
+  display: inline-block;
+  padding: 25px;
+  width: 300px;
+  height: 300px;
+  margin: 0 -20px;
+  overflow: hidden;
+}
+.info-circle::before {
+  content: "";
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+  padding-top: 100%;
+}
+.info-circle h2 {
+  font-size: 16px;
+  color: var(--lpblue);
+  text-transform: uppercase;
+  font-weight: 700;
+  height: auto;
+  margin: 0;
+  padding-top: 35px;
+}
+.cp-loanstatus h2 {
+  padding-top: 35px;
+}
+.info-circle h2 img{
+  display: block;
+  margin: auto;
+}
+.info-circle h2 span {
+  border-bottom: 2px solid var(--lpteal);
+}
+.cp-balance {
+  font-size: 45px;
+  font-weight: 800;
+  color: var(--lpblue);
+  position: absolute;
+  top: 40%;
+  width: 75%;
+  text-align: center;
+}
+.color-balance {
+  top: 35%;
+  position: relative;
+}
+.cp-payment {
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--lpblue);
+  margin: 0;
+}
+.cp-text-payment-date {
+  color: var(--darkgray);
+  font-weight: 500;
+  margin: 5px 0;
+}
+.cp-text-payment  {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.cp-nextpayment-ach .uk-button {
+  line-height: 16px;
+  border-bottom: 0;
+  color: var(--medgray);
+}
+
+
+/* LOAN CHART */
+
+.chart-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.loan-chart {
+  width: 144%;
+  height: 144%;
+  background: transparent;
+  position: absolute;
+  left: -22%;
+  top: -22%;
+}
+.amcharts-chart-div a {
+  display: none !important;
+}
+.amcharts-legend-div {
+  position: absolute;
+  text-align: left;
+  width: 50%;
+  height: 200px;
+  top: 40%;
+  left: 15%;
+}
+
+/* LAST PAYMENT */
+
+.cp-payment-status {
+  margin: 0;
+}
+.cp-payment-status span {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.cp-payment-status {
+  margin: 0;
+}
+.cp-text-thanks {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--lpblue);
+  font-size: 20px;
+  margin: 5px;
+}
+
+/* EXTRAPEYMENTS TOGGLE */
+
+#cp-extra-payment .uk-button {
+  line-height: 48px;
+  min-height: 48px;
+  margin-left: 5px;
+  margin-top: 0!important;
+}
+#cp-extra-payment .cp-text-amount {
+  margin: 0 !important;
+  color: var(--darkgray);
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 30px;
+}
+#cp-extra-payment input {
+  width: 50%;
+}
+#cp-extra-payment fieldset {
+  width: 100%;
+}
+
+/* TABS */
+
+.cp-transactions .uk-tab {
+  margin-bottom: -2px;
+}
+.cp-transactions .uk-tab > li.uk-active > a {
+    border-color: var(--lpblue);
+    border-bottom-color: transparent;
+    background: var(--lightgray80);
+    color: var(--lpblue);
+    height: 20px;
+}
+.uk-tab > li:not(.uk-active) > a:hover, .uk-tab > li:not(.uk-active) > a:focus,
+.uk-tab > li.uk-open:not(.uk-active) > a {
+    margin-top: -10px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    background: transparent;
+    height: 23px;
+}
+.cp-transactions .uk-tab > li > a {
+    padding: 15px 20px;
+    border: 2px solid var(--gray);
+    border-bottom-width: 0;
+    color: var(--gray);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    height: 18px;
+}
+
+.cp-tabs-content {
+  background: var(--lightgray80);
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+  border-top: 2px solid var(--lpblue);
+}
+.cp-tab-info .uk-panel-space {
+  padding-bottom: 0;
+}
+.cp-tab-info h2 {
+  color: var(--lpblue);
+  font-weight: 700;
+}
+select {
+  margin-right: 10px !important;
+}
+
+.cp-tab-info .uk-table thead th,
+.cp-tab-info .uk-table td {
+  padding: 15px 10px;
+  border-bottom: 1px solid var(--gray);
+  font-size: 14px;
+  color: var(--lpblue);
+}
+
+.cp-tab-info .uk-table thead th {
+  text-transform: uppercase;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) and (min-width: 960px) {
+  .info-circle {
+    width: 240px;
+    height: 240px;
+    margin: 5px -20px;
+  }
+  .info-circle h2 {
+    padding-top: 15px;
+    font-size: 14px;
+  }
+  .cp-text-payment {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .info-circle h2 img {
+    width: 55px;
+  }
+  .cp-payment-status .uk-icon {
+    font-size: 350%;
+  }
+  .cp-payment {
+    font-size: 45px;
+  }
+  .cp-payment img {
+    height: 45px;
+    margin-bottom: 7px;
+  }
+  .cp-balance {
+    top: 35%;
+  }
+  .color-balance {
+    top: 30%;
+  }
+  .cp-text-payment-date {
+    margin: 5px 0 0 0;
+  }
+}
+
+@media (max-width: 959px) {
+  .cp-balance {
+    width: 33%;
+  }
+  .uk-button-large {
+    width: 50%;
+  }
+  .info-circle h2 {
+    height: auto;
+  }
+  .info-circle {
+    width: 320px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+
+}
+@media (max-width: 667px) {
+  .cp-tab-info .uk-panel-space {
+    padding: 30px 0;
+  }
+  .cp-tab-info .uk-table thead th, .cp-tab-info .uk-table td {
+    padding: 10px;
+  }
+
+}
+@media (max-width: 568px) {
+
+}
+@media (max-width: 320px) {
+
+}

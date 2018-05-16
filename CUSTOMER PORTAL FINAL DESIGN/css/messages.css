@@ -1,0 +1,315 @@
+/* INBOX */
+
+.tm-inbox {
+  background: var(--lightgray);
+  padding: 0 0 70px 0;
+  margin-bottom: -50px;
+}
+
+.tm-inbox .uk-switcher {
+  padding: 30px 0;
+  margin-right: 50px;
+}
+
+.content-inbox {
+  background: #FFF;
+  padding-left: 40px;
+}
+.tabs-inbox {
+  max-width: 240px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.inbox-tools {
+  background: var(--lightgray);
+  margin-left: -40px;
+  padding-left: 40px;
+  height: 50px;
+  line-height: 50px;
+}
+.inbox-tools .inbox-actions .uk-form-controls label,
+.inbox-tools .inbox-actions .uk-form-controls .uk-button {
+  line-height: 40px;
+  min-height: 40px;
+  color: var(--lpblue);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-right: 5px;
+  border: 1px solid transparent;
+}
+.inbox-tools .inbox-actions .uk-form-controls .uk-button:hover {
+  border: 1px solid var(--lpteal);
+}
+.inbox-pagination, .inbox-actions {
+  line-height: 50px;
+  min-height: 50px;
+}
+.inbox-pagination strong {
+  padding: 0 5px;
+}
+.inbox-pagination .uk-button-group .uk-button {
+  line-height: 40px;
+  min-height: 40px;
+  border-right: 4px solid var(--lightgray);
+  vertical-align: middle;
+}
+.button-compose {
+  line-height: 50px;
+  min-height: 50px;
+  background: var(--lpblue) url(../images/ico-inbox-compose.png) no-repeat 10px center;
+  background-size: 30px 30px;
+  display: block;
+  padding-left: 50px;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+.button-compose:hover {
+  background-size: 60px 60px;
+  background-position: -15px center;
+}
+.inbox-table  {
+  margin-bottom: 20px !important;
+}
+.inbox-table td label span {
+  margin-left: 10px;
+}
+.inbox-table th {
+    padding: 15px;
+    color: var(--darkgray);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.inbox-table td {
+    padding: 15px;
+    color: var(--darkgray);
+    border-top: 2px solid var(--medlightgray);
+    border-bottom: 2px solid var(--medlightgray);
+    font-size: 14px;
+}
+.inbox-table .unread td {
+  border-top: 2px solid var(--lpteal);
+  border-bottom: 2px solid var(--lpteal);
+  background: var(--lightgray80);
+  font-weight: 500;
+  color: var(--lpblue);
+}
+.inbox-table .selected td {
+  border-top: 2px solid var(--lpteal);
+  border-bottom: 2px solid var(--lpteal);
+  font-weight: 500;
+  color: var(--lpteal);
+}
+.inbox-table td > .uk-icon{
+  color: var(--lpblue);
+}
+td input[type=checkbox]:checked + span {
+  font-weight: 500;
+  color: var(--lpteal);
+}
+.uk-notify-message {
+  background: var(--lpteal);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* COMPOSE */
+
+.button-back {
+  margin: 20px 20px 0 20px;
+}
+.button-back, .button-back .uk-icon {
+  color: #FFF;
+}
+.button-cancel {
+  color: var(--lpblue);
+  font-size: 15px;
+  font-weight: 400;
+  min-height: 48px;
+  line-height: 48px;
+}
+.button-cancel .uk-icon-button {
+  border: 2px solid var(--lpblue);
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  line-height: 20px;
+  font-size: 16px;
+  vertical-align: 0;
+  color: var(--lpblue);
+}
+.inbox-tools .compose-actions {
+  vertical-align: middle;
+  margin-right: 5px;
+  border: 1px solid transparent;
+  line-height: 40px;
+  height: 40px;
+  max-width: 800px;
+}
+.cp-composebox {
+  max-width: 800px;
+}
+.cp-composebox .uk-form-row {
+  padding: 5px 0;
+  color: var(--darkgray);
+  font-size: 18px;
+  position: relative;
+  border-bottom: 2px solid var(--medlightgray);
+  margin: 0;
+}
+.cp-composebox .uk-form-row label {
+  float: left;
+  padding-left: 10px;
+  line-height: 40px;
+  color: var(--gray);
+  font-weight: 500;
+}
+.cp-composebox .uk-form-row input {
+  height: 38px;
+  border: 0;
+  margin: 0 5px;
+  display: block;
+  float: left;
+  padding-left: 5px;
+  font-size: 17px;
+  color: var(--darkgray);
+  font-weight: 400;
+
+}
+.uk-form-row.email-to input {
+  width: 730px;
+}
+.uk-form-row.email-subject input {
+  width: 690px;
+}
+.uk-form-row.email-content {
+  margin-top: 30px;
+  border: 0;
+}
+.uk-form-row.email-buttons {
+  background: var(--lightgray80);
+  padding: 20px;
+  margin-top: -6px;
+  border-left: 2px solid var(--medlightgray);
+  border-right: 2px solid var(--medlightgray);
+}
+.uk-form-row.email-buttons .uk-button {
+  width: 40%;
+}
+.cp-composebox .uk-htmleditor{
+  border: 2px solid var(--lightgray);
+  background: #ffffff;
+}
+.cp-composebox .uk-htmleditor-navbar {
+  background: var(--lightgray80);
+  border: 0;
+}
+.cp-composebox .uk-htmleditor-content {
+  border: 0;
+}
+.cp-composebox .uk-htmleditor-navbar-nav li:last-child {
+  display: none;
+}
+.cp-composebox .uk-htmleditor-navbar-nav>li>a {
+  color: var(--gray);
+  border: 0;
+  background: var(--lightgray80);
+  font-size: 13px;
+}
+.cp-composebox .uk-htmleditor-navbar-nav>li>a:active {
+  color: var(--darkgray);
+  background: var(--lightgray80);
+}
+.cp-composebox .uk-htmleditor-navbar-nav>li>a>i {
+  color: var(--medgray);
+}
+.cp-composebox .uk-htmleditor-navbar-nav>li.uk-active>a {
+  background: #FFF;
+  border: 0;
+}
+.cp-composebox .uk-htmleditor-navbar-nav>li:hover>a, .uk-htmleditor-navbar-nav>li>a:focus {
+    background: var(--lightgray);
+    color: var(--darkgray);
+    outline: 0;
+    position: relative;
+    z-index: 1;
+    border: 0;
+}
+
+/* MESSAGE OPEN VIEW */
+
+.button-back, .button-back .uk-icon {
+  color: #FFF;
+}
+.button-reply {
+  color: var(--lpblue);
+  font-size: 15px;
+  font-weight: 400;
+  min-height: 48px;
+  line-height: 48px;
+}
+.button-reply .uk.icon {
+  color: var(--lpblue);
+  margin-left: 10px
+}
+.cp-messagebox {
+  max-width: 800px;
+}
+.cp-messagebox .uk-form-row {
+  padding: 10px;
+  border-bottom: 2px solid var(--medlightgray);
+  color: var(--darkgray);
+  margin-top: 0;
+}
+.cp-messagebox .uk-form-row.email-subject {
+  font-weight: 500;
+  font-size: 18px;
+}
+.cp-messagebox .uk-form-row.email-from {
+  font-size: 16px;
+  margin-top: 0;
+  color: var(--darkgray);
+
+}
+.cp-messagebox .uk-form-row.email-from img {
+  float: left;
+  margin-right: 15px;
+}
+.cp-messagebox .uk-form-row.email-from .email-from-details span {
+  display:block;
+  line-height: 1.5;
+}
+.cp-messagebox .uk-form-row.email-from .email-from-details span.date {
+  color: var(--darkgray);
+  font-size: 14px;
+}
+.cp-messagebox .uk-form-row.email-from .email-from-details span.from {
+  color: var(--darkgray);
+  font-size: 16px;
+}
+.cp-messagebox .uk-form-row.email-from .email-from-details span.from a {
+  color: var(--lpblue);
+}
+.cp-messagebox .uk-form-row.email-from .email-from-details span.from a:hover {
+  color: var(--lporange);
+}
+.cp-messagebox .uk-form-row.email-open-content {
+  padding: 0 20px;
+  max-width: 700px;
+  border-bottom: 0;
+}
+.cp-messagebox .uk-form-row.email-open-content> .head {
+  margin-bottom: 30px;
+}
+.cp-messagebox .uk-form-row.email-open-content> .message * {
+  font-size: 17px;
+  color: var(--darkgray);
+  line-height: 1.45;
+}
+.cp-messagebox .uk-form-row.email-buttons {
+  border: 0;
+  margin-top: 30px;
+  padding: 25px;
+  background: var(--lightgray80);
+}

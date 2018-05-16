@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lendingpoint - Costumer Portal</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/uikit.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/payments.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/uikit.js"></script>
+  <script src="js/components/tooltip.min.js"></script>
+  <script src="js/components/datepicker.min.js"></script>
+  <!-- amCharts javascript sources -->
+  <script type="text/javascript" src="js/amcharts.js"></script>
+  <script type="text/javascript" src="js/pie.js"></script>
+
+
+  <!-- amCharts javascript code -->
+  <script type="text/javascript">
+    AmCharts.makeChart("chartdiv", {
+      "type": "pie",
+      "adjustPrecision": true,
+      "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+      "innerRadius": "80%",
+      "hoverAlpha": 0.6,
+      "labelsEnabled": false,
+      "marginBottom": 0,
+      "marginTop": 0,
+      "titleField": "Loan",
+      "valueField": "Amount",
+      "autoDisplay": true,
+      "fontSize": 14,
+      "theme": "light",
+      "allLabels": [],
+      "balloon": {
+        "disableMouseEvents": false,
+        "fixedPosition": false,
+        "horizontalPadding": 10,
+        "offsetX": 0,
+        "offsetY": 0,
+        "showBullet": false,
+        "verticalPadding": 5
+      },
+      "legend": {
+        "enabled": false,
+        "align": "center",
+        "markerType": "circle"
+      },
+      "titles": [],
+      "dataProvider": [{
+          "Loan": "Principal",
+          "Amount": "8500"
+        },
+        {
+          "Loan": "Interest",
+          "Amount": "2500"
+        }
+      ]
+    });
+  </script>
+
+
+</head>
+
+<body class="customerp-app uk-height-1-1">
+  <!-- TEMPLATE HEADER -->
+  <div class="tm-header">
+    <div class="uk-container uk-container-center">
+      <div class="uk-grid uk-grid-large uk-grid-match uk-hidden-small app-logos" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-medium-1-4 uk-text-left">
+          <div class="uk-panel">
+            <img src="images/lendingpoint.png">
+          </div>
+        </div>
+        <div class="uk-width-medium-3-4 uk-text-left">
+          <nav class="uk-navbar">
+            <div class="uk-navbar-flip">
+              <ul class="uk-navbar-nav uk-hidden-small">
+                <li class="uk-active">
+                  <a href="dashboard.html">Home</a>
+                </li>
+                <li class="uk-parent" data-uk-dropdown>
+                  <a href="dashboard-payments.html">Payments</a>
+                </li>
+                <li>
+                  <a href="contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="dashboard-messages.html">Messages</a>
+                </li>
+                <li class="uk-parent" data-uk-dropdown>
+                  <a href="javascript:;"><i class="uk-icon-user uk-icon-justify"></i> Hi, Michelle</a>
+                  <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-small">
+                    <ul class="uk-nav uk-nav-navbar">
+                      <li><a href="">logout</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+
+      <div class="uk-grid uk-grid-collapse uk-grid-match uk-hidden-large uk-hidden-medium app-logos-mobile" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-1-1 uk-text-center">
+          <div class="uk-panel">
+            <img src="images/lendingpoint.png">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- TEMPLATE USER LOAN BAR -->
+  <div class="tm-userbar">
+    <div class="uk-container uk-container-center">
+      <div class="uk-grid uk-grid-collapse">
+        <div class="uk-panel">
+          <p class="uk-text-blue"><strong>Nice to see you Amanda!</strong> <span><img src="images/userbar-separator.png"></span> </p>
+        </div>
+        <div class="uk-panel user-loans" id="loan-dropdown" data-uk-dropdown="{mode:'click',justify:'#loan-dropdown'}">
+          <div class="uk-active">
+            <a class="uk-button">
+              <p><span>34567890-4567889</span><span>$10,000.00  <i class="uk-icon uk-icon-caret-down uk-icon-medium uk-icon-justify"></i></span></p>
+            </a>
+          </div>
+          <div class="uk-dropdown">
+            <ul class="uk-nav uk-nav-dropdown">
+              <li class="uk-nav-header">
+                <p><span>Your Loans</span><span>Amount</span></p>
+              </li>
+              <li class="uk-active">
+                <a href="javascript:;">
+                  <p><span>34567890-4567889 </span><span>$10,000.00</span></p>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <p><span>34567891-44135781 </span><span>$15,000.00</span></p>
+                </a>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <p><span>56765891-78654332 </span><span>$8,000.00</span></p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TEMPLATE BREADCRUMB NAVIGATION -->
+  <div class="tm-breadcrumb">
+    <div class="uk-container uk-container-center uk-grid">
+      <ul class="uk-breadcrumb uk-grid uk-grid-small">
+        <li>My Loan</li>
+        <li class="uk-active">Payments</li>
+      </ul>
+    </div>
+  </div>
+  <!-- TEMPLATE MAIN CONTENT -->
+  <div class="tm-main">
+    <!-- DASHBOARD -->
+    <div class="uk-container uk-container-center cp-payments">
+      <div class="uk-panel uk-panel-space">
+        <div class="uk-alert uk-alert-large" data-uk-alert>
+          <a href="" class="uk-alert-close uk-close"></a>
+          <p>
+            <strong>Welcome to LendingPoint, Amanda.</strong> We are so happy you are here. Did you know you can update your loan terms to take advantage of an additional $5,000. <a href="javascript:;">Click here to learn more</a>
+          </p>
+        </div>
+      </div>
+      <div class="uk-grid uk-grid-collapse cp-loan-info" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-large-1-3 uk-width-small-1-1 uk-text-center">
+          <div class="uk-panel uk-panel-space">
+            <div class="info-circle cp-loanstatus">
+              <h2><span>Loan Balance</span></h2>
+              <div class="chart-container">
+                <div id="chartdiv" class="loan-chart"></div>
+              </div>
+              <p class="cp-balance">$8,800.50</p>
+              <p class="color-balance uk-text-medium"><span><i class="uk-icon-circle uk-text-teal"></i> Interest</span> <span><i class="uk-icon-circle uk-text-blue"></i> Principal</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="uk-width-large-1-3 uk-width-small-1-1 uk-text-center">
+          <!-- PAYMENTS ACH ONLY -->
+          <div class="uk-panel uk-panel-space">
+            <div class="info-circle cp-nextpayment-ach">
+              <h2><span>Your next payment of</span></h2>
+              <p class="cp-payment"><img src="images/icons/ico-next-pay.png" alt=""> $200</p>
+              <p class="cp-text-payment uk-text-blue">Will be auto-withdrawn on</p>
+              <p class="cp-text-payment-date">Saturday, September 15, 2017</p>
+              <p class="uk-text-blue uk-text-uppercase"><i class="uk-icon-exclamation-circle uk-text-orange"></i> <strong>Enrolled in Auto-Pay</strong></p>
+              <a href="javascript:;" class="uk-button uk-button-link disabled">No action needed<br>at this time</a>
+            </div>
+          </div>
+          <!-- PAYMENTS NON-ACH ONLY -->
+          <div class="uk-panel uk-panel-space">
+            <div class="info-circle cp-nextpayment-noach">
+              <h2><span>Next payment due</span></h2>
+              <p class="cp-payment-status uk-text-teal"><span>In 8 days</span></p>
+              <p class="cp-text-payment-date uk-margin-top">Saturday, September 15, 2017</p>
+              <p class="cp-payment">$200</p>
+              <a href="javascript:;" class="uk-button uk-button-primary uk-margin-top">Pay Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="uk-width-large-1-3 uk-width-small-1-1 uk-text-center">
+          <div class="uk-panel uk-panel-space">
+            <div class="info-circle cp-lastpayment">
+              <h2><span>Last payment</span></h2>
+              <p class="cp-payment-status uk-text-teal"><span>Received</span></p>
+              <p class="cp-payment-status uk-text-teal uk-text-center">
+                <i class="uk-icon uk-icon-check-circle uk-icon-justify uk-icon-2x uk-text-orange"></i>
+              </p>
+              <p class="cp-payment">$1,220</p>
+              <p class="cp-text-payment-date">Saturday, September 15, 2017</p>
+              <h3 class="cp-text-thanks">Tank you</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-panel uk-panel-space uk-padding-top-remove uk-text-center">
+        <h2 class="uk-heading-medium">Make an additional payment</h2>
+      </div>
+      <div class="uk-grid uk-grid-small uk-margin-top-large uk-margin-bottom" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-large-8-10 uk-container-center uk-width-1-1 uk-text-center">
+          <div class="uk-panel arrow-box">
+            <div class="uk-grid uk-grid-collapse">
+              <div class="uk-width-medium-4-10 uk-text-left">
+                <div class="switch">
+                  <input id="switch-toggle" class="switch-toggle switch-toggle-round-flat" type="checkbox" data-uk-toggle="{target:'#cp-extra-payment'}">
+                  <label for="switch-toggle"><span>I'd like to make an extra payment towards my principal only.</span></label>
+
+                </div>
+              </div>
+              <div class="uk-width-medium-6-10 uk-text-left">
+                <div id="cp-extra-payment" class="uk-hidden">
+                  <form class="uk-form">
+                    <fieldset class="uk-form-icon" data-uk-margin>
+                      <i class="uk-icon uk-icon-dollar uk-icon-justify"></i>
+                      <input type="text" placeholder="Principal Amount" class="uk-margin-small-top">
+                      <button class="uk-button uk-button-primary">Make an extra Payment</button>
+                      <p class="cp-text-amount">You can pay between $ and $$$</p>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tm-tabs uk-margin-large-top">
+      <div class="uk-grid uk-grid-medium uk-margin-bottom cp-transactions">
+        <div class="uk-width-1-1 uk-flex uk-flex-center">
+          <ul class="uk-tab" data-uk-tab="{connect:'#cp-payments-tabs'}">
+            <li class="uk-active"><a href="javascript:;">Payment History</a></li>
+            <li><a href="javascript:;">Amortization Schedule</a></li>
+          </ul>
+        </div>
+        <!-- This is the container of the content items -->
+        <div class="uk-width-1-1 cp-tabs-content">
+          <div class="uk-container uk-container-center">
+            <ul id="cp-payments-tabs" class="uk-switcher uk-margin">
+              <!-- Tab #1-->
+              <li class="cp-tab-info">
+                <form class="uk-form">
+                  <div class="uk-grid uk-grid-medium">
+                    <div class="uk-width-1-1">
+                      <div class="uk-panel uk-panel-space uk-text-center">
+                        <div class="cp-selects">
+                          <select class="my-select">
+                             <option>Past 3 Months</option>
+                             <option>Past 6 Months</option>
+                             <option>2017</option>
+                         </select>
+                       </div>
+                       <button class="uk-button uk-button-blue" type="button" name="button"><i class="uk-icon uk-icon-file-pdf-o uk-icon-small"></i> Save PDF</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="uk-panel uk-panel-space uk-overflow-container">
+                  <table class="uk-table uk-table-striped uk-table-middle uk-table-hover">
+                    <thead>
+                      <tr>
+                        <th>Transaction #</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Principal</th>
+                        <th>Interest</th>
+                        <th>Type</th>
+                        <th>Method</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>###</td>
+                        <td>MAY 21, 2017</td>
+                        <td>$1,160.00</td>
+                        <td>$1,000.00</td>
+                        <td>$160</td>
+                        <td>Recurring</td>
+                        <td>Auto-Bank</td>
+
+                      </tr>
+                      <tr>
+                        <td>###</td>
+                        <td>ABR 21, 2017</td>
+                        <td>$1,160.00</td>
+                        <td>$1,000.00</td>
+                        <td></td>
+                        <td>Extra Payment</td>
+                        <td>Auto-Debit</td>
+
+                      </tr>
+                      <tr>
+                        <td>###</td>
+                        <td>FEB 21, 2017</td>
+                        <td>$1,160.00</td>
+                        <td>$1,000.00</td>
+                        <td>$160</td>
+                        <td>Extra Payment</td>
+                        <td>Auto-Debit</td>
+
+                      </tr>
+                      <tr>
+                        <td>###</td>
+                        <td>JAN 21, 2017</td>
+                        <td>$1,160.00</td>
+                        <td>$1,000.00</td>
+                        <td>$160</td>
+                        <td>Recurring</td>
+                        <td>Auto-Bank</td>
+
+                      </tr>
+                      <tr>
+                        <td>###</td>
+                        <td>DEC 21, 2016</td>
+                        <td>$1,160.00</td>
+                        <td>$1,000.00</td>
+                        <td></td>
+                        <td>Extra Payment</td>
+                        <td>Auto-Bank</td>
+
+                      </tr>
+                      <tr>
+                        <td>###</td>
+                        <td>NOV 21, 2016</td>
+                        <td>$1,160.00</td>
+                        <td>$1,000.00</td>
+                        <td>$160</td>
+                        <td>Extra Payment</td>
+                        <td>Auto-Bank</td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="uk-panel uk-panel-space uk-text-center">
+                  <a href="javascript:;" class="uk-button uk-button-blue">Load More <i class="uk-icon-small uk-icon-cog uk-icon-spin uk-margin-left"></i></a>
+                </div>
+
+              </li>
+              <!-- Tab #2-->
+              <li>
+                <div class="uk-grid uk-grid-medium">
+                  <div class="uk-width-1-1 uk-text-center uk-panel-space">
+                    <img src="images/coming-soon.png" class="uk-margin-large-top">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TEMPLATE FOOTER -->
+    <div class="tm-footer uk-text-center uk-text-white uk-flex uk-flex-middle uk-flex-wrap uk-flex-space-around">
+      <div class="uk-panel">
+        ©2018, LendingPoint LLC. All rights reserved
+      </div>
+      <div class="uk-panel">
+        <a href="javascript:;" target="_blank">Terms of Use</a><span>   |   </span><a href="javascript:;" target="_blank">Privacy Notice</a><span>   |   </span><a href="javascript:;" target="_blank">Eligibility Criteria</a>
+      </div>
+      <div class="uk-panel">
+        Our address: 1201 Roberts Blvd Suite 200 Kennesaw, GA 30144
+      </div>
+    </div>
+
+
+</body>
+
+</html>

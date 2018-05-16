@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lendingpoint - Costumer Portal</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/uikit.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/uikit.js"></script>
+  <script src="js/components/tooltip.min.js"></script>
+  <script src="js/components/datepicker.min.js"></script>
+
+</head>
+
+<body class="customerp-app">
+  <div class="tm-header">
+    <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
+      <div class="uk-grid uk-grid-large uk-grid-match uk-hidden-small app-logos" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-medium-1-4 uk-text-left">
+          <div class="uk-panel">
+            <img src="images/lendingpoint.png">
+          </div>
+        </div>
+        <div class="uk-width-medium-3-4 uk-text-left">
+          <nav class="uk-navbar">
+            <div class="uk-navbar-flip">
+              <ul class="uk-navbar-nav uk-hidden-small">
+                <li>
+                  <a href="dashboard.html">Home</a>
+                </li>
+                <li class="uk-active uk-parent" data-uk-dropdown>
+                  <a href="dashboard-payments.html">Payments</a>
+                  <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-small">
+                    <ul class="uk-nav uk-nav-navbar">
+                      <li><a href="">ACH</a></li>
+                      <li><a href="">Non-ACH</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="dashboard-messages.html">
+                    <div class="uk-badge uk-badge-notification">2</div> Messages</a>
+                </li>
+                <li class="uk-parent" data-uk-dropdown>
+                  <a href="javascript:;"><i class="uk-icon-user uk-icon-justify"></i> Hi, Michelle</a>
+                  <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-small">
+                    <ul class="uk-nav uk-nav-navbar">
+                      <li><a href="">Sub1</a></li>
+                      <li><a href="">Sub2</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+
+      <div class="uk-grid uk-grid-collapse uk-grid-match uk-hidden-large uk-hidden-medium app-logos-mobile" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-1-1 uk-text-center">
+          <div class="uk-panel uk-panel-box">
+            <img src="images/lendingpoint.png">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="tm-main">
+    <div class="uk-container uk-container-center uk-margin-large-top uk-margin-bottom cp-homepage">
+      <div class="uk-panel">
+        <ul class="uk-navbar-nav uk-hidden-small">
+          <li>
+            <a href="javascript:;">LOAN NUMBER</a>
+          </li>
+          <li>
+            <a href="javascript:;">$ LOAN BALANCE</a>
+          </li>
+          <li>
+            <a href="javascript:;">LOAN TERM</a>
+          </li>
+          <li>
+            <a href="javascript:;">$ PAID TO DATE</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="uk-panel uk-panel-space">
+        <ul class="uk-breadcrumb">
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="dashboard-payments.html">Payments</a></li>
+          <li><a href="javascript:;">Make a Payment</a></li>
+        </ul>
+      </div>
+      <ul class="uk-subnav uk-flex-middle uk-flex-space-between uk-text-center">
+        <li class="uk-active uk-width-1-3 uk-panel uk-panel-box uk-panel-box-secondary">
+          <a href="javascript:;">
+            <div class="uk-badge uk-badge-big uk-badge-notification">1</div> Make a Payment
+          </a>
+        </li>
+        <li class="uk-disabled uk-width-1-3 uk-panel uk-panel-box uk-panel-box-secondary">
+          <a href="javascript:;">
+            <div class="uk-badge uk-badge-big uk-badge-notification">2</div> Confirm</a>
+        </li>
+        <li class="uk-disabled uk-width-1-3 uk-panel uk-panel-box uk-panel-box-secondary">
+          <a href="javascript:;">
+            <div class="uk-badge uk-badge-big uk-badge-notification">3</div> Receipt</a>
+        </li>
+      </ul>
+
+      <div class="uk-grid uk-grid-small uk-margin-top uk-margin-bottom" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-medium-1-3 uk-width-small-1-1 uk-text-center">
+          <div class="uk-panel uk-panel-box">
+            <h2>Monthly Amount</h2>
+            <p class="cp-balance">$200</p>
+          </div>
+
+        </div>
+        <div class="uk-width-medium-1-3 uk-width-small-1-1 uk-text-center">
+          <div class="uk-panel uk-panel-box">
+            <h2>Payment Method</h2>
+            <h3>DEBIT CARD <br>ENDING IN - 3445</h3>
+            <a href="javascript:;" class="uk-button uk-button-link">Change</a>
+          </div>
+
+        </div>
+        <div class="uk-width-medium-1-3 uk-width-small-1-1 uk-text-center">
+          <div class="uk-panel uk-panel-box">
+            <h2>Payment Date</h2>
+            <h3>WEDNESDAY,<br>JUNE 27, 2017</h3>
+          </div>
+
+        </div>
+      </div>
+      <form class="uk-form" action="payments-confirm.html" method="get">
+      <div class="uk-grid uk-grid-small uk-margin-bottom" data-uk-grid-match="{target:'.uk-panel'}">
+
+        <div class="uk-width-medium-2-3 uk-width-small-1-1 uk-text-center">
+          <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+          <div class="uk-grid uk-grid-collapse">
+            <div class="uk-width-medium-1-6 uk-text-center">
+              <div class="switch">
+                <input id="switch-toggle" class="switch-toggle switch-toggle-round-flat" type="checkbox" data-uk-toggle="{target:'#cp-extra-payment'}">
+                <label for="switch-toggle"></label>
+              </div>
+            </div>
+            <div class="uk-width-medium-5-6 uk-text-left">
+              <p>
+                I'd like to make an extra payment towards my principal only.
+              </p>
+              <div id="cp-extra-payment" class="uk-hidden">
+
+                  <fieldset data-uk-margin="">
+                    <label for="">$</label>
+                    <input type="text" placeholder="Principal Amount" class="uk-margin-small-top">
+                    <span>You can pay between $ and $$$</span>
+                  </fieldset>
+
+              </div>
+
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="uk-width-medium-1-3 uk-width-small-1-1 uk-text-center">
+          <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+          <button class="uk-button uk-button-large uk-button-primary" type="submit">Confirm</button>
+          </div>
+        </div>
+
+      </div>
+      </form>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

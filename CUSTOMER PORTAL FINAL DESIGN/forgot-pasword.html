@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lendingpoint - Costumer Portal</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/uikit.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/uikit.js"></script>
+  <script src="js/components/tooltip.min.js"></script>
+</head>
+<!-- LOGIN VIEW IS UNIQUE -->
+<body class="customerp-app uk-height-1-1">
+  <div class="tm-header">
+    <div class="uk-container uk-container-center">
+      <div class="uk-grid uk-grid-large uk-grid-match uk-hidden-small app-logos" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-medium-1-4 uk-text-left">
+          <div class="uk-panel">
+            <img src="images/lendingpoint.png">
+          </div>
+        </div>
+        <div class="uk-width-medium-3-4 uk-text-right">
+          <div class="uk-panel">
+            <ul class="uk-navbar-nav uk-hidden-small">
+              <li class="uk-active">
+                <a href="javascript:;">Login</a>
+              </li>
+              <li >
+                <a href="javascript:;">Apply</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="uk-grid uk-grid-collapse uk-grid-match uk-hidden-large uk-hidden-medium app-logos-mobile" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-1-1 uk-text-center">
+          <div class="uk-panel">
+            <img src="images/lendingpoint.png">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="tm-main">
+    <div class="uk-container uk-container-center uk-margin-large-top uk-margin-bottom cp-login">
+        <div class="uk-grid uk-vertical-align">
+          <div class="uk-width-large-1-2 uk-width-medium-3-5 uk-width-small-1-1 uk-text-left uk-vertical-align-middle">
+            <div class="uk-panel uk-panel-space">
+              <div class="cp-greeting uk-text-white">
+                <h1 class="uk-h3 uk-margin-bottom-remove"><strong>Reset Password</strong></h1>
+                <p class="uk-margin-top-remove">Enter the email address associated with your account:</p>
+              </div>
+              <form class="uk-panel uk-form uk-form-stacked cp-loginform">
+                <div class="uk-form-row">
+                  <div class="uk-form-controls">
+                    <input type="email" placeholder="Your email" class="uk-form-large">
+                  </div>
+                  <span class="validation-error uk-text-danger">
+                    <i class="uk-icon uk-icon-exclamation-circle uk-icon-small uk-icon-justify"></i> Invalid email address.
+                  </span>
+                  <span class="validation-error uk-text-danger">
+                    <i class="uk-icon uk-icon-ban uk-icon-small uk-icon-justify"></i> That email not exist in our system. Please try again.
+                  </span>
+                </div>
+                <div class="uk-flex uk-form-row">
+                    <a class="uk-button uk-button-primary uk-button-large" href="javascript:;">SUBMIT</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- FOOTER IS UNIQUE -->
+  <div class="tm-footer uk-text-center uk-text-white uk-flex uk-flex-middle uk-flex-wrap uk-flex-space-around">
+    <div class="uk-panel">
+      ©2018, LendingPoint LLC. All rights reserved
+    </div>
+    <div class="uk-panel">
+      <a href="javascript:;" target="_blank">Terms of Use</a><span>   |   </span><a href="javascript:;" target="_blank">Privacy Notice</a><span>   |   </span><a href="javascript:;" target="_blank">Eligibility Criteria</a>
+    </div>
+    <div class="uk-panel">
+      Our address: 1201 Roberts Blvd Suite 200 Kennesaw, GA 30144
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>

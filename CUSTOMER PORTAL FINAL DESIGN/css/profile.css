@@ -1,0 +1,68 @@
+/* INBOX */
+
+.tm-profile {
+  background: var(--lightgray);
+  padding: 30px 0 70px 0;
+  margin-bottom: -50px;
+}
+
+.tm-profile .uk-switcher {
+  padding: 30px 0 50px;
+  margin-right: 50px;
+}
+.profile-form form {
+  margin-top: 30px;
+}
+.content-profile {
+  background: #FFF;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.tabs-profile {
+  max-width: 240px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.payment-status {
+  padding: 20px;
+  background: var(--lightgray80);
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.payments-form, .profile-form {
+  max-width: 800px;
+}
+.payment-cards .uk-panel-box {
+  border-radius: 10px;
+  border: 2px solid var(--medlightgray);
+  font-size: 16px;
+  color: var(--darkgray);
+}
+.payment-cards .uk-panel-box .uk-panel-title {
+  color: var(--lpblue);
+  font-weight: 700;
+  margin-left: -30px;
+  margin-right: -30px;
+  border-bottom: 2px solid var(--medlightgray);
+  text-indent: 30px;
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+.payment-cards .uk-panel-box .uk-panel-title span {
+  float: right;
+  margin-right: 30px;
+}
+.payment-cards .uk-panel-box p span {
+  float: right;
+}
+.payment-cards .uk-panel-box p strong {
+  text-transform: uppercase;
+}
+.payment-cards .uk-panel-box p strong a, .payment-cards .uk-panel-box p span a {
+  text-transform: uppercase;
+  color: var(--lporange);
+}
+.payment-cards .uk-panel-box.add-payment {
+  border-color: var(--lpteal);
+  color: var(--lpteal);
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lendingpoint - Costumer Portal</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/uikit.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/uikit.js"></script>
+  <script src="js/components/tooltip.min.js"></script>
+</head>
+<!-- LOGIN VIEW IS UNIQUE -->
+<body class="customerp-app uk-height-1-1">
+  <div class="tm-header">
+    <div class="uk-container uk-container-center">
+      <div class="uk-grid uk-grid-large uk-grid-match uk-hidden-small app-logos" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-medium-1-4 uk-text-left">
+          <div class="uk-panel">
+            <img src="images/lendingpoint.png">
+          </div>
+        </div>
+        <div class="uk-width-medium-3-4 uk-text-right">
+          <div class="uk-panel">
+            <ul class="uk-navbar-nav uk-float-right">
+              <li class="uk-active">
+                <a href="javascript:;">Login</a>
+              </li>
+              <li >
+                <a href="javascript:;">Apply</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="uk-grid uk-grid-collapse uk-grid-match uk-hidden-large uk-hidden-medium app-logos-mobile" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-1-1 uk-text-center">
+          <div class="uk-panel">
+            <img src="images/lendingpoint.png">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="tm-main">
+    <div class="uk-container uk-container-center uk-margin-large-top uk-margin-bottom cp-login">
+        <div class="uk-grid uk-vertical-align">
+          <div class="uk-width-large-1-2 uk-width-medium-3-5 uk-width-small-1-1 uk-text-left uk-vertical-align-middle">
+            <div class="uk-panel uk-panel-space">
+              <div class="cp-greeting uk-text-white">
+                <h1 class="uk-heading-large"><b>Welcome</b> to your<br>Customer Portal</h1>
+                <p>Login below to access your account:</p>
+              </div>
+              <form class="uk-panel uk-form uk-form-stacked cp-loginform">
+                <div class="uk-form-row">
+                  <div class="uk-form-controls">
+                    <input type="text" placeholder="Username" class="uk-form-large">
+                  </div>
+                  <span class="validation-error uk-text-danger">
+                    <i class="uk-icon uk-icon-exclamation-circle uk-icon-small uk-icon-justify"></i> Information required!
+                  </span>
+                </div>
+                <div class="uk-form-row">
+                  <div class="uk-form-controls">
+                    <input type="password" placeholder="Password" class="uk-form-large">
+                  </div>
+                  <span class="validation-error uk-text-danger">
+                    <i class="uk-icon uk-icon-exclamation-circle uk-icon-small uk-icon-justify"></i> Information required!
+                  </span>
+                </div>
+                <div class="error-general uk-alert uk-text-center" data-uk-alert>
+                  <a href="" class="uk-alert-close uk-close uk-text-white"></a>
+                  <span class="uk-text-white">
+                    <i class="uk-icon uk-icon-warning uk-icon-medium uk-icon-justify"></i>
+                    <p class="uk-text-medium">Invalid Username or password.<br>Please try again, or <a class="uk-text-white" href="javascript:;">click to reset password.</a></p>
+                  </span>
+                </div>
+                <div class="uk-flex uk-form-row">
+                    <div class="uk-width-1-2 uk-text-small uk-text-bold uk-text-uppercase">
+                      <a class="uk-button uk-button-link uk-text-white" href="javascript:;">Forgot Password?</a>
+                    </div>
+                    <div class="uk-width-1-2">
+                    <a class="uk-button uk-button-primary uk-button-large" href="javascript:;">ENTER</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- FOOTER IS UNIQUE -->
+  <div class="tm-footer uk-text-center uk-text-white uk-flex uk-flex-middle uk-flex-wrap uk-flex-space-around">
+    <div class="uk-panel">
+      ©2018, LendingPoint LLC. All rights reserved
+    </div>
+    <div class="uk-panel">
+      <a href="javascript:;" target="_blank">Terms of Use</a><span>   |   </span><a href="javascript:;" target="_blank">Privacy Notice</a><span>   |   </span><a href="javascript:;" target="_blank">Eligibility Criteria</a>
+    </div>
+    <div class="uk-panel">
+      Our address: 1201 Roberts Blvd Suite 200 Kennesaw, GA 30144
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>

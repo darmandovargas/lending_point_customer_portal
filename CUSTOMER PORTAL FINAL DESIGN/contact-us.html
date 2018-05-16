@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lendingpoint - Costumer Portal</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/uikit.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/contact-us.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/uikit.js"></script>
+  <script src="js/components/accordion.min.js"></script>
+  <script src="js/components/tooltip.min.js"></script>
+  <script src="js/components/datepicker.min.js"></script>
+
+
+</head>
+
+<body class="customerp-app">
+  <div class="tm-header">
+    <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
+      <div class="uk-grid uk-grid-large uk-grid-match uk-hidden-small app-logos" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-medium-1-4 uk-text-left">
+          <div class="uk-panel">
+            <img src="images/lendingpoint.png">
+          </div>
+        </div>
+        <div class="uk-width-medium-3-4 uk-text-left">
+          <nav class="uk-navbar">
+            <div class="uk-navbar-flip">
+              <ul class="uk-navbar-nav uk-hidden-small">
+                <li>
+                  <a href="dashboard.html">Home</a>
+                </li>
+                <li>
+                  <a href="dashboard-payments.html">Payments</a>
+                  <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-small">
+                    <ul class="uk-nav uk-nav-navbar">
+                      <li><a href="dashboard-payments-ach.html">ACH</a></li>
+                      <li><a href="dashboard-payments.html">Non-ACH</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="uk-active uk-parent" data-uk-dropdown>
+                  <a href="contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="dashboard-messages.html">
+                    <div class="uk-badge uk-badge-notification">2</div> Messages</a>
+                </li>
+                <li class="uk-parent" data-uk-dropdown>
+                  <a href="javascript:;"><i class="uk-icon-user uk-icon-justify"></i> Hi, Michelle</a>
+                  <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-small">
+                    <ul class="uk-nav uk-nav-navbar">
+                      <li><a href="">Sub1</a></li>
+                      <li><a href="">Sub2</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+
+      <div class="uk-grid uk-grid-collapse uk-grid-match uk-hidden-large uk-hidden-medium app-logos-mobile" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-1-1 uk-text-center">
+          <div class="uk-panel uk-panel-box">
+            <img src="images/lendingpoint.png">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="tm-main">
+    <div class="uk-container uk-container-center uk-margin-large-top uk-margin-bottom cp-contact">
+      <div class="uk-panel">
+        <ul class="uk-navbar-nav uk-hidden-small">
+          <li>
+            <a href="javascript:;">LOAN NUMBER</a>
+          </li>
+          <li>
+            <a href="javascript:;">$ LOAN BALANCE</a>
+          </li>
+          <li>
+            <a href="javascript:;">LOAN TERM</a>
+          </li>
+          <li>
+            <a href="javascript:;">$ PAID TO DATE</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="uk-panel uk-panel-space">
+        <ul class="uk-breadcrumb">
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="uk-panel uk-panel-space title-top-header uk-text-center">
+          <h4>Need to get in touch?</h4>
+      </div>
+
+      <div class="uk-grid uk-grid-small uk-margin-top uk-margin-bottom cp-contact-us" data-uk-grid-match="{target:'.uk-panel'}">
+        <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-text-center">
+          <a href="dashboard-messages.html">
+          <div class="uk-icon-button">
+              <img src="images/icons/ico-mail.png" alt="">
+              <h5>EMAIL</h5>
+              <hr>
+              <p>WRITE US</p>
+          </div>
+          </a>
+
+        </div>
+        <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-text-center">
+          <a href="javascript:;">
+          <div class="uk-icon-button">
+              <img src="images/icons/ico-call.png" alt="">
+              <h5>CALL</h5>
+              <hr>
+              <p>1800-773-2451</p>
+          </div>
+          </a>
+
+        </div>
+
+        <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-text-center">
+          <a href="javascript:;">
+          <div class="uk-icon-button" type="checkbox" data-uk-toggle="{target:'#cp-extra-payment'}">
+              <img src="images/icons/ico-call-back.png" alt="">
+              <h5>CALLBACK</h5>
+              <hr>
+              <p>CLICK HERE</p>
+          </div>
+          </a>
+
+        </div>
+
+        <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-text-center">
+          <a href="javascript:;">
+          <div class="uk-icon-button">
+              <img src="images/icons/ico-chat.png" alt="">
+              <h5>LIVE CHAT</h5>
+              <hr>
+              <p>ONLINE NOW</p>
+          </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div id="cp-extra-payment" class="uk-hidden">
+        <form class="uk-form cp-callback">
+          <div class="close"><a href="" class="uk-alert-close uk-close"></a></div>
+          <fieldset>
+        <h2 class="uk-modal-title">REQUEST A CALLBACK</h2>
+        <p>Enter your phone number below and we'll contact you as soon as possible.</p>
+        <p class="uk-text-center">
+          <input type="text" class="uk-margin-small-top">
+          <button class="uk-button uk-button-primary" type="button">SEND</button>
+        </p>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="uk-panel uk-panel-box uk-text-center text-faq">
+      <h2>FAQs</h2>
+      <p>Frequently Asked Questions about personal loans, fair credit, and what you’ll need so that LendingPoint can help you apply for and get a better loan for a better life.</p>
+      </div>
+
+      <div class="uk-accordion" data-uk-accordion>
+          <h3 class="uk-accordion-title">1. ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ?</h3>
+          <div class="uk-accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+            felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
+
+          <h3 class="uk-accordion-title">2. ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ?</h3>
+          <div class="uk-accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+            felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
+
+          <h3 class="uk-accordion-title">3. ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ?</h3>
+          <div class="uk-accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+            felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
+
+          <h3 class="uk-accordion-title">4. ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ?</h3>
+          <div class="uk-accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+            felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
+
+          <h3 class="uk-accordion-title">5. ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ?</h3>
+          <div class="uk-accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+            felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
+
+          <h3 class="uk-accordion-title">6. ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ?</h3>
+          <div class="uk-accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+            felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

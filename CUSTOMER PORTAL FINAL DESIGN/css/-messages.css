@@ -1,0 +1,115 @@
+/* INBOX */
+
+.tm-inbox {
+  background: var(--lightgray);
+  padding: 0 0 70px 0;
+  margin-bottom: -50px;
+}
+
+.tm-inbox .uk-switcher {
+  padding: 30px 0;
+  margin-right: 50px;
+}
+
+.content-inbox {
+  background: #FFF;
+  padding-left: 40px;
+}
+.tabs-inbox {
+  max-width: 240px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.inbox-tools {
+  background: var(--lightgray);
+  margin-left: -40px;
+  padding-left: 40px;
+  height: 50px;
+  line-height: 50px;
+}
+.inbox-tools .inbox-actions .uk-form-controls label,
+.inbox-tools .inbox-actions .uk-form-controls .uk-button {
+  line-height: 40px;
+  min-height: 40px;
+  color: var(--lpblue);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-right: 5px;
+  border: 1px solid transparent;
+}
+.inbox-tools .inbox-actions .uk-form-controls .uk-button:hover {
+  border: 1px solid var(--lpteal);
+}
+.inbox-pagination, .inbox-actions {
+  line-height: 50px;
+  min-height: 50px;
+}
+.inbox-pagination strong {
+  padding: 0 5px;
+}
+.inbox-pagination .uk-button-group .uk-button {
+  line-height: 40px;
+  min-height: 40px;
+  border-right: 4px solid var(--lightgray);
+  vertical-align: middle;
+}
+.button-compose {
+  line-height: 50px;
+  min-height: 50px;
+  background: var(--lpblue) url(../images/ico-inbox-compose.png) no-repeat 10px center;
+  background-size: 30px 30px;
+  display: block;
+  padding-left: 50px;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+.button-compose:hover {
+  background-size: 60px 60px;
+  background-position: -15px center;
+}
+.inbox-table  {
+  margin-bottom: 20px !important;
+}
+.inbox-table td label span {
+  margin-left: 10px;
+}
+.inbox-table th {
+    padding: 15px;
+    color: var(--darkgray);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.inbox-table td {
+    padding: 15px;
+    color: var(--darkgray);
+    border-top: 2px solid var(--medlightgray);
+    border-bottom: 2px solid var(--medlightgray);
+    font-size: 14px;
+}
+.inbox-table .unread td {
+  border-top: 2px solid var(--lpteal);
+  border-bottom: 2px solid var(--lpteal);
+  background: var(--lightgray80);
+  font-weight: 500;
+  color: var(--lpblue);
+}
+.inbox-table .selected td {
+  border-top: 2px solid var(--lpteal);
+  border-bottom: 2px solid var(--lpteal);
+  font-weight: 500;
+  color: var(--lpteal);
+}
+.inbox-table td > .uk-icon{
+  color: var(--lpblue);
+}
+td input[type=checkbox]:checked + span {
+  font-weight: 500;
+  color: var(--lpteal);
+}
+.uk-notify-message {
+  background: var(--lpteal);
+  font-size: 16px;
+  font-weight: 500;
+}
